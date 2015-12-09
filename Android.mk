@@ -46,4 +46,8 @@ endif
 ifeq ($(TARGET_PRODUCT), aosp_flounder)
     include $(LOCAL_PATH)/conf/htc/flounder/Android.mk
 endif
+ifeq ($(TARGET_PRODUCT), gce_x86_phone)
+    include $(LOCAL_PATH)/conf/google/gce_x86/Android.mk
+endif
+
 endif # BOARD_HAVE_BLUETOOTH_BCM
